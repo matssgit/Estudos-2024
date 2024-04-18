@@ -1,0 +1,32 @@
+header {
+    background-color: rgb(24, 185, 24);
+    color: white;
+    border-radius: 5px;
+}
+
+body {
+    background-image: url(https://www.viagenspossiveis.com.br/wp-content/uploads/2013/02/C360_2012-11-19-17-59-02.jpg);
+    background-size: cover;
+    
+}
+
+main {
+    background-color: rgb(252, 252, 127);
+    border-radius: 5px;
+}
+
+a {
+    color: green;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: white;
+    border-radius: 5px;
+}
