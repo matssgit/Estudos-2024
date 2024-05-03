@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/* todas as demais mídias */
+
+/* Typical Device Breakpoints 
+
+Pequenas Telas: até 600px
+Celular: até 768px
+Tablet: 768px até 992
+Desktop: 992px até 1200px
+Grandes Telas: acima de 1200px
+
+*/
+
+@media print { /* IMPRESSÃO */
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg); /* desnecessário */
+
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main {
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+    
+    img#iphone {display: none;}
+    img#itablet {display: none;}
+    img#iprint {display: block;}
+    img#ipc {display: none;}
+    img#itv {display: none;}
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+    
+    img#iphone {display: none;}
+    img#itablet {display: block;}
+    img#iprint {display: none;}
+    img#ipc {display: none;}
+    img#itv {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* Desktop */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+    
+    img#iphone {display: none;}
+    img#itablet {display: none;}
+    img#iprint {display: none;}
+    img#ipc {display: block;}
+    img#itv {display: none;}
+}
+
+@media screen and (min-width: 1200px) { /* TELAS GRANDES */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+    
+    img#iphone {display: none;}
+    img#itablet {display: none;}
+    img#iprint {display: none;}
+    img#ipc {display: none;}
+    img#itv {display: block;}
+}
+
