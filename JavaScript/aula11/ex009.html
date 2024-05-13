@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+</head>
+<body>
+    <h1>País e Nacionalidade</h1>
+    <form action="descobrir-nacionalidade">
+        <div id="pais">
+            <label for="text" id="txtp">Em que país você vive atualmente?: </label>
+            <input type="text" id="txtp">
+            
+            <button type="submit" onclick="enviar()">Enviar</button>
+        </div>
+        <div id="res">
+
+        </div>
+    </form>
+    <script>
+        var botao = document.getElementById('txtp')
+        
+        function enviar() {
+            var nacionalidade = botao
+            var res = document.querySelector('div#res')
+
+            if (nacionalidade == 'Brasil') {
+                res.innerHTML(`Vivendo em ${nacionalidade}, você é Brasileiro!`)
+            } else {
+                res.innerHTML(`Vivendo em ${nacionalidade}, você é Estrangeiro!`)
+            }
+        }
+        
+    </script>
+</body>
+</html>
