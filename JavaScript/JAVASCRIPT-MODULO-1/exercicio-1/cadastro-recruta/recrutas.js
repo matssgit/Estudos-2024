@@ -6,9 +6,8 @@ let anoNas = prompt('Digite o ano de nascimento do recruta: ')
 let idade = 2024 - anoNas
 
 window.alert(`
-- Nome: ${nome}
-- Sobrenome: ${sobrenome}
+- Nome Completo: ${nome} ${sobrenome}
 - Campo de Estudo: ${campoEstudo}
-- Ano de nascimento: ${idade} anos`)
+- Idade: ${idade} anos`)
 
 
