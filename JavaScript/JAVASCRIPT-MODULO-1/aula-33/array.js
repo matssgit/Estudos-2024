@@ -18,6 +18,7 @@ let ultimoElemento = arr.pop()
 console.log(arr)
 console.log(ultimoElemento)
 
+// Retorna o valor removido do array
 // shift
 ultimoElemento = arr.shift()
 console.log(arr)
