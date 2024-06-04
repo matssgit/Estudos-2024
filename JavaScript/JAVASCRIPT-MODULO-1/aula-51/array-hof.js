@@ -12,6 +12,7 @@ const personagens = [
 
 //  const nomes = []
 
+// map: permite obter um novo array a partir de um array existenste
 //  for (let i = 0; i < personagens.length; i++){
 //    nomes.push(personagens[i].nome)
 //  }
@@ -22,8 +23,7 @@ const nomes = personagens.map(function (personagem) {
 
    console.log(nomes)
 
-  // Filter
-
+// filter: permite obter um novo array contendo apenas elementos específicos de um array existente
 //  const orcs = []
 
 //  for (let i = 0; i < personagens.length; i++) {
@@ -47,6 +47,8 @@ const orcs = personagens.filter(function(personagem){
 
   console.log(nivelTotal)
 
+  // reduce: serve para reduzir um array existente a um valor final qualquer,
+  // passando um valor entre cada iteração sobre esse array e retornando ele no final
   const racas = personagens.reduce(function(valorAcumulado, personagem){
     if (valorAcumulado[personagem.raca]){
         valorAcumulado[personagem.raca].push(personagem)
@@ -58,3 +60,13 @@ const orcs = personagens.filter(function(personagem){
   }, {})
 
   console.log(racas)
+
+  // Sort
+
+  const personagensOrdernados = personagens.slice().sort(function(a, b){
+    return a.nivel - b.nivel
+  })
+
+  console.log(personagens)
+  console.log(personagensOrdernados)
+  
