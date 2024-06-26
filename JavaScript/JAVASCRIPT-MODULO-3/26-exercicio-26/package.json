@@ -8,8 +8,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "description": "",
   "dependencies": {
     "dayjs": "^1.11.11"
   }
+=======
+  "description": ""
+>>>>>>> 4fe65fc41d76fd266071de11070b0b7b718744c0
 }

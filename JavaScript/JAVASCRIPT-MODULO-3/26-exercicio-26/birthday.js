@@ -1,5 +1,6 @@
 const dayjs = require("dayjs")
 
+<<<<<<< HEAD
 function birthday(date){
     const birthday = dayjs(date)
     const today = dayjs()
@@ -15,3 +16,5 @@ function birthday(date){
 }
 
 birthday("1996-07-06")
+=======
+>>>>>>> 4fe65fc41d76fd266071de11070b0b7b718744c0
